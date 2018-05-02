@@ -1,0 +1,30 @@
+﻿<Window x:Class="ProyectoOpcional_0900167780.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoOpcional_0900167780"
+        mc:Ignorable="d"
+        Title="Visor imagenes" Height="500" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Name="btnOpenFileBrowse" Content="Buscar imagenes" Click="btnOpenFileBrowse_Click" Grid.Column="0" Grid.Row="0"></Button>
+        <Label Name="lblFilePath" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"></Label>
+        <Image Name="imgViewer" Height="180" Width="100" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="2"></Image>
+        <ListBox Name="lstImages" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" SelectionChanged="lstImages_SelectionChanged"></ListBox>
+    </Grid>
+</Window>
